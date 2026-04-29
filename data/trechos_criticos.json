@@ -1,0 +1,5 @@
+[
+  { "rod": "SC-401", "kmIni": 10, "kmFim": 14, "desc": "Trecho de Alto Índice de Sinistralidade (Curvas do Jardim da Paz)" },
+  { "rod": "SC-401", "kmIni": 1, "kmFim": 3, "desc": "Atenção: Área Urbana / Alto Fluxo de Pedestres" },
+  { "rod": "SC-405", "kmIni": 0, "kmFim": 2, "desc": "Trecho Crítico: Faixa Reversível / Congestionamento" }
+]
