@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a1a"/>
+  
+  <defs>
+    <!-- Gradients based on the PNG style -->
+    <linearGradient id="carRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </linearGradient>
+    <linearGradient id="windowBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4db8ff"/>
+      <stop offset="100%" stop-color="#008ae6"/>
+    </linearGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Labels -->
+  <text x="350" y="380" fill="white" font-family="Times New Roman, serif" font-size="42" font-weight="bold">PEDESTRE</text>
+  <text x="560" y="380" fill="white" font-family="Times New Roman, serif" font-size="42" font-weight="bold">V1</text>
+
+  <!-- Road -->
+  <g transform="translate(150, 450)">
+    <rect width="1300" height="300" rx="20" fill="#333333"/>
+    <!-- Top and Bottom borders -->
+    <rect width="1300" height="8" fill="white"/>
+    <rect y="292" width="1300" height="8" fill="white"/>
+    <!-- Yellow dashed line -->
+    <line x1="0" y1="150" x2="1300" y2="150" stroke="#f1c40f" stroke-width="8" stroke-dasharray="60 40"/>
+  </g>
+
+  <!-- Pedestrian (based on drawing style) -->
+  <g transform="translate(380, 440)" filter="url(#dropShadow)">
+    <!-- Head/Hair -->
+    <path d="M0 -110 Q 15 -115 25 -100 L 25 -85 Q 0 -80 -10 -90 Z" fill="#f1c40f"/> <!-- Hair -->
+    <circle cx="10" cy="-85" r="15" fill="#ffd080"/> <!-- Face -->
+    <!-- Torso (Orange Shirt) -->
+    <path d="M-15 -70 L 35 -70 L 45 -20 L -25 -20 Z" fill="#ff8c1a"/>
+    <!-- Legs (Grey Pants) -->
+    <path d="M-15 -20 L -30 40 L -10 40 L 5 -20 Z" fill="#666666"/> <!-- Back leg -->
+    <path d="M15 -20 L 40 40 L 60 40 L 35 -20 Z" fill="#808080"/> <!-- Front leg -->
+    <!-- Arms -->
+    <path d="M-15 -65 L -40 -30 L -25 -30 L -5 -60 Z" fill="#ffd080"/>
+  </g>
+
+  <!-- Vehicle V1 (based on drawing style) -->
+  <g transform="translate(520, 410)" filter="url(#dropShadow)">
+    <!-- Car Body -->
+    <path d="M0 40 L 160 40 L 160 80 Q 160 100 140 100 L 20 100 Q 0 100 0 80 Z" fill="url(#carRed)"/>
+    <path d="M20 40 L 40 0 L 120 0 L 150 40 Z" fill="url(#carRed)"/>
+    <!-- Windows -->
+    <path d="M45 10 L 115 10 L 135 40 L 30 40 Z" fill="url(#windowBlue)" opacity="0.8"/>
+    <!-- Wheels -->
+    <circle cx="35" cy="100" r="22" fill="#2c1a3d"/>
+    <circle cx="35" cy="100" r="10" fill="#4c3b5c"/>
+    <circle cx="125" cy="100" r="22" fill="#2c1a3d"/>
+    <circle cx="125" cy="100" r="10" fill="#4c3b5c"/>
+    <!-- Light -->
+    <rect x="-2" y="55" width="10" height="15" rx="5" fill="#ffff99"/>
+  </g>
+
+  <!-- Description (Professional Footer) -->
+  <rect x="150" y="780" width="1300" height="80" rx="15" fill="rgba(255,255,255,0.05)"/>
+  <text x="800" y="830" text-anchor="middle" fill="#cccccc" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    1.1 · ATROPELAMENTO DE PEDESTRE
+  </text>
+
+</svg>

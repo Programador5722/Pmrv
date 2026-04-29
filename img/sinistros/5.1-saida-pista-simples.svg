@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1a1a1a"/>
+  
+  <defs>
+    <linearGradient id="carRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </linearGradient>
+    <linearGradient id="windowBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4db8ff"/>
+      <stop offset="100%" stop-color="#008ae6"/>
+    </linearGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Labels -->
+  <text x="560" y="380" fill="white" font-family="Times New Roman, serif" font-size="42" font-weight="bold">V1</text>
+
+  <!-- Road -->
+  <g transform="translate(150, 450)">
+    <rect width="1300" height="300" rx="20" fill="#333333"/>
+    <rect width="1300" height="8" fill="white"/>
+    <rect y="292" width="1300" height="8" fill="white"/>
+    <line x1="0" y1="150" x2="1300" y2="150" stroke="#f1c40f" stroke-width="8" stroke-dasharray="60 40"/>
+  </g>
+
+  <!-- Vehicle V1 (Trajectory leaving road) -->
+  <g transform="translate(900, 360) rotate(-35)" filter="url(#dropShadow)">
+    <path d="M0 40 L 160 40 L 160 80 Q 160 100 140 100 L 20 100 Q 0 100 0 80 Z" fill="url(#carRed)"/>
+    <path d="M20 40 L 40 0 L 120 0 L 150 40 Z" fill="url(#carRed)"/>
+    <path d="M45 10 L 115 10 L 135 40 L 30 40 Z" fill="url(#windowBlue)" opacity="0.8"/>
+    <circle cx="35" cy="100" r="22" fill="#2c1a3d"/>
+    <circle cx="35" cy="100" r="10" fill="#4c3b5c"/>
+    <circle cx="125" cy="100" r="22" fill="#2c1a3d"/>
+    <circle cx="125" cy="100" r="10" fill="#4c3b5c"/>
+  </g>
+
+  <!-- Motion lines -->
+  <path d="M500 600 Q 700 600, 850 450" fill="none" stroke="white" stroke-width="4" stroke-dasharray="20 20" opacity="0.3"/>
+
+  <!-- Description Footer -->
+  <rect x="150" y="780" width="1300" height="80" rx="15" fill="rgba(255,255,255,0.05)"/>
+  <text x="800" y="830" text-anchor="middle" fill="#cccccc" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    5.1 · SAÍDA DE PISTA SIMPLES
+  </text>
+
+</svg>
